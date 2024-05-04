@@ -46,7 +46,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.radio.modem</name>
-        <version>1</version>
+        <version>1-2</version>
         <interface>
             <name>IRadioModem</name>
             <instance>slot4</instance>
@@ -62,7 +62,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.radio.network</name>
-        <version>1</version>
+        <version>1-2</version>
         <interface>
             <name>IRadioNetwork</name>
             <instance>slot4</instance>
@@ -74,7 +74,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.radio.sim</name>
-        <version>1</version>
+        <version>1-2</version>
         <interface>
             <name>IRadioSim</name>
             <instance>slot4</instance>
@@ -90,7 +90,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.radio.voice</name>
-        <version>1</version>
+        <version>1-2</version>
         <interface>
             <name>IRadioVoice</name>
             <instance>slot4</instance>
@@ -98,6 +98,14 @@
             <instance>imsSlot2</instance>
             <instance>imsSlot3</instance>
             <instance>imsSlot4</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>arm.mali.platform</name>
+        <version>1-2</version>
+        <interface>
+            <name>ICompression</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -132,7 +140,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.mediatek.hardware.apuware.apusys</name>
-        <version>1</version>
+        <version>1-2</version>
         <interface>
             <name>INeuronApusys</name>
             <instance>default</instance>
@@ -157,6 +165,14 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.apuware.utils</name>
+        <version>1</version>
+        <interface>
+            <name>IApuwareUtils</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.apuware.xrp</name>
         <transport>hwbinder</transport>
@@ -173,6 +189,14 @@
         <version>1.0</version>
         <interface>
             <name>IAtcid</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.audio</name>
+        <version>1</version>
+        <interface>
+            <name>IMtkAudio</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -211,6 +235,14 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.camera.atms</name>
+        <version>1</version>
+        <interface>
+            <name>IATMs</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.camera.bgservice</name>
         <transport>hwbinder</transport>
@@ -218,6 +250,14 @@
         <interface>
             <name>IBGService</name>
             <instance>internal/0</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.camera.bgservice</name>
+        <version>1</version>
+        <interface>
+            <name>IBGService</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -265,6 +305,14 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.composer_ext</name>
+        <version>1</version>
+        <interface>
+            <name>IComposerExt</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.dfps</name>
         <transport>hwbinder</transport>
@@ -306,6 +354,14 @@
         <version>1</version>
         <interface>
             <name>IEmds</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.gnss</name>
+        <version>1</version>
+        <interface>
+            <name>IMtkGnss</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -450,6 +506,22 @@
             <instance>LoggerHidlServer</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.mbrain</name>
+        <version>1</version>
+        <interface>
+            <name>IMBrain</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.mbrainj</name>
+        <version>1</version>
+        <interface>
+            <name>IMBrainJava</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.mdmonitor</name>
         <transport>hwbinder</transport>
@@ -469,8 +541,16 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.mmagent</name>
+        <version>1</version>
+        <interface>
+            <name>IMMAgent</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>vendor.mediatek.hardware.mmlpq</name>
-        <version>2</version>
+        <version>2-3</version>
         <interface>
             <name>IMmlpq</name>
             <instance>default</instance>
@@ -504,6 +584,14 @@
         </interface>
         <interface>
             <name>IMtkPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.mtkpower</name>
+        <interface>
+            <version>1</version>
+            <name>IMtkPowerService</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -601,7 +689,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.mediatek.hardware.mtkradioex.data</name>
-        <version>1</version>
+        <version>1-2</version>
         <interface>
             <name>IMtkRadioExData</name>
             <instance>slot1</instance>
@@ -634,7 +722,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.mediatek.hardware.mtkradioex.modem</name>
-        <version>1</version>
+        <version>1-2</version>
         <interface>
             <name>IMtkRadioExModem</name>
             <instance>slot1</instance>
@@ -696,6 +784,14 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.netdagent</name>
+        <version>1</version>
+        <interface>
+            <name>INetdagents</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.neuropilot.agent</name>
         <transport>hwbinder</transport>
@@ -709,6 +805,14 @@
         <name>vendor.mediatek.hardware.nvram</name>
         <transport>hwbinder</transport>
         <version>1.0-1</version>
+        <interface>
+            <name>INvram</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.nvram</name>
+        <version>1</version>
         <interface>
             <name>INvram</name>
             <instance>default</instance>
@@ -752,7 +856,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.mediatek.hardware.pq_aidl</name>
-        <version>1</version>
+        <version>1-6</version>
         <interface>
             <name>IPictureQuality_AIDL</name>
             <instance>default</instance>
@@ -815,6 +919,14 @@
         <name>vendor.mediatek.hardware.videotelephony</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
+        <interface>
+            <name>IVideoTelephony</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.videotelephony</name>
+        <version>1</version>
         <interface>
             <name>IVideoTelephony</name>
             <instance>default</instance>
